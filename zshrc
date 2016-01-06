@@ -52,8 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # homebrew dir goes first
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:/usr/local/sbin"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.cabal/bin"
 export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
@@ -61,7 +60,8 @@ export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:/opt/X11/bin"
 export PATH="$PATH:/usr/texbin"
-export PATH="$PATH:/usr/local/Cellar/binutils/2.25.1/bin"
+export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
+export PATH="$PATH:$(brew --prefix binutils)/bin"
 export PATH="$PATH:$HOME/Library/Haskell/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
@@ -96,7 +96,7 @@ alias py=ipython
 
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
-export NVM_DIR="/Users/jiayu/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(pyenv init -)"
