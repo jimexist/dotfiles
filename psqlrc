@@ -1,0 +1,11 @@
+\set QUIET 1
+\pset null ¤
+\timing on
+\x auto
+\set PROMPT1 '%[%033[1m%][%/] # '
+\set PROMPT2 '... # '
+\set VERBOSITY verbose
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTCONTROL ignoredups
+\set COMP_KEYWORD_CASE upper
+\unset QUIET
