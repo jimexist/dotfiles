@@ -43,6 +43,9 @@ brew install watchman
 brew install webkit2png
 brew install xz
 
+# casks
+brew cask install java
+
 # cleanup
 brew cleanup
 
