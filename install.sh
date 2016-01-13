@@ -15,3 +15,7 @@ ln -s "${BASEDIR}/gitignore" ~/.gitignore
 
 # postgres
 ln -s "${BASEDIR}/psqlrc" ~/.psqlrc
+
+# ansible
+ln -s "${BASEDIR}/ansible.cfg" ~/.ansible.cfg
+
