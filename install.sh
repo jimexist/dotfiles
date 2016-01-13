@@ -18,4 +18,5 @@ ln -s "${BASEDIR}/psqlrc" ~/.psqlrc
 
 # ansible
 ln -s "${BASEDIR}/ansible.cfg" ~/.ansible.cfg
+ln -s "${BASEDIR}/ansible_hosts" ~/.ansible_hosts
 
