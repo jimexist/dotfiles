@@ -3,6 +3,9 @@
 # install git
 sudo apt-get install git
 
+# zsh
+sudo apt-get install zsh
+
 # pyenv
 curl -L
 https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer
