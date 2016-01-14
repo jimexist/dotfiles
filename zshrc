@@ -70,7 +70,7 @@ export PATH="$PATH:$HOME/Library/Haskell/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
+[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
