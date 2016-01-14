@@ -49,6 +49,9 @@ plugins=(git docker encode64 npm sublime)
 
 source $ZSH/oh-my-zsh.sh
 
+# use vim
+export EDITOR=vim
+
 # User configuration
 
 # homebrew dir goes first
