@@ -1,4 +1,7 @@
+[devservers]
 ivy
-jump
 compile
+
+[misc]
+jump
 
