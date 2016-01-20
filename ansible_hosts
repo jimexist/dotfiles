@@ -1,6 +1,6 @@
 [devservers]
 ivy
-compile
+dev
 
 [misc]
 jump
