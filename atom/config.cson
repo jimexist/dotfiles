@@ -1,0 +1,20 @@
+"*":
+  "exception-reporting":
+    userId: "ce3eaeef-bd6f-efd2-ac59-a638eb7ab826"
+  "tabs-to-spaces":
+    onSave: "untabify"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    showInvisibles: false
+    showIndentGuide: true
+    tabLength: 2
+    fontSize: 13
+    invisibles:
+      cr: "↩"
+      eol: ""
+      space: "·"
+      tab: "⇥"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

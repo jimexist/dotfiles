@@ -20,3 +20,7 @@ ln -s "${BASEDIR}/psqlrc" ~/.psqlrc
 ln -s "${BASEDIR}/ansible.cfg" ~/.ansible.cfg
 ln -s "${BASEDIR}/ansible_hosts" ~/.ansible_hosts
 
+# atom
+mkdir -p ~/.atom
+ln -s "${BASEDIR}/atom/config.cson" ~/.atom/config.cson
+
