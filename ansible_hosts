@@ -1,3 +1,9 @@
+[local]
+localhost
+
+[webservers]
+webserver
+
 [devservers]
 ivy
 dev
