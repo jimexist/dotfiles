@@ -108,3 +108,6 @@ eval "$(pyenv virtualenv-init -)"
 
 alias myIP='wget http://ipinfo.io/ip -qO -'
 
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+

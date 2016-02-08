@@ -1,18 +1,19 @@
 "*":
-  "exception-reporting":
-    userId: "ce3eaeef-bd6f-efd2-ac59-a638eb7ab826"
-  "tabs-to-spaces":
-    onSave: "untabify"
-  welcome:
-    showOnStartup: false
   core: {}
   editor:
-    showInvisibles: false
-    showIndentGuide: true
-    tabLength: 2
     fontSize: 13
     invisibles:
       cr: "↩"
       tab: "⇥"
+    showIndentGuide: true
+    showInvisibles: false
+    tabLength: 2
+  "exception-reporting":
+    userId: "ce3eaeef-bd6f-efd2-ac59-a638eb7ab826"
+  "ide-haskell": {}
+  "tabs-to-spaces":
+    onSave: "untabify"
+  welcome:
+    showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
