@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Bright.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"trailing_spaces_file_max_size": 10000,
+	"trailing_spaces_trim_on_save": true,
+	"translate_tabs_to_spaces": true
+}
