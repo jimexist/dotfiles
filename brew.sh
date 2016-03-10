@@ -45,6 +45,8 @@ brew install xz
 
 # casks
 brew cask install java
+brew cask install cheatsheet
+brew cask install alfred
 
 # cleanup
 brew cleanup
