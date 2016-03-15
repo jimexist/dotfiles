@@ -22,6 +22,7 @@ brew install docker
 brew install docker-compose
 brew install docker-machine
 brew install elasticsearch
+brew install elixir
 brew install flow
 brew install httperf
 brew install maven
@@ -42,6 +43,7 @@ brew install unrar
 brew install watchman
 brew install webkit2png
 brew install xz
+brew install z
 
 # casks
 brew cask install java
