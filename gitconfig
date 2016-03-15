@@ -19,3 +19,5 @@
 	required = true
 [core]
 	autocrlf = input
+[credential]
+	helper = osxkeychain
