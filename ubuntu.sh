@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# install git
-sudo apt-get install -y git
-
-# zsh
-sudo apt-get install -y zsh
+# install essentials
+sudo apt-get install -y git zsh wget
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# the fuck
+wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 
 # pyenv
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev
