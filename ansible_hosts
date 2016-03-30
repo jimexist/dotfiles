@@ -2,11 +2,8 @@
 localhost
 
 [webservers]
-webserver
-
-[devservers]
 ivy
-dev
+madadata
 
 [vpn]
 jump
