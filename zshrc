@@ -96,15 +96,16 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias py=ipython
 
 eval "$(thefuck --alias)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-eval "$(pyenv init -)"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 eval "$(pyenv virtualenv-init -)"
+alias py=ipython
+alias jpt=jupyter
 
 alias myIP='wget http://ipinfo.io/ip -qO -'
 

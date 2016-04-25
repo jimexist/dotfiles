@@ -1,6 +1,7 @@
 [user]
 	name = Jiayu Liu
 	email = jimexist@gmail.com
+	signingkey = 27E99069
 [push]
 	default = simple
 [alias]
