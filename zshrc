@@ -61,7 +61,6 @@ export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
-export PATH="$PATH:$HOME/.pyenv/bin"
 export PATH="$PATH:/opt/X11/bin"
 export PATH="$PATH:/usr/texbin"
 [[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
@@ -103,7 +102,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-eval "$(pyenv virtualenv-init -)"
+if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 alias py=ipython
 alias jpt=jupyter
 
