@@ -113,6 +113,5 @@ export PATH="$PATH:$GOPATH/bin"
 
 source /usr/local/share/zsh/site-functions/_aws
 source /usr/local/share/zsh/site-functions/_flow
-source /usr/local/share/zsh/site-functions/_docker
 source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 
