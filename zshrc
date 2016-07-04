@@ -56,16 +56,14 @@ export EDITOR=vim
 
 # homebrew dir goes first
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="$PATH:$HOME/.cabal/bin"
 export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/X11/bin"
-export PATH="$PATH:/usr/texbin"
 [[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 [[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix binutils)/bin"
-export PATH="$PATH:$HOME/Library/Haskell/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
@@ -112,6 +110,7 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 source /usr/local/share/zsh/site-functions/_aws
-source /usr/local/share/zsh/site-functions/_flow
 source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
+
+export MACHINE_STORAGE_PATH="/Volumes/Apple SD Card Reader Media/docker"
 

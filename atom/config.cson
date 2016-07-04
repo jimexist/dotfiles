@@ -1,7 +1,18 @@
 "*":
-  core: {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
   editor:
-    fontSize: 13
     invisibles:
       cr: "↩"
       tab: "⇥"
@@ -10,7 +21,16 @@
     tabLength: 2
   "exception-reporting":
     userId: "ce3eaeef-bd6f-efd2-ac59-a638eb7ab826"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   "ide-haskell": {}
+  linter: {}
+  minimap: {}
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-distraction-free-mode": {}
+    "nuclide-home":
+      showHome: false
   "tabs-to-spaces":
     onSave: "untabify"
   welcome:
