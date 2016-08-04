@@ -112,5 +112,5 @@ export PATH="$PATH:$GOPATH/bin"
 source /usr/local/share/zsh/site-functions/_aws
 source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 
-export MACHINE_STORAGE_PATH="/Volumes/Apple SD Card Reader Media/docker"
+export MACHINE_STORAGE_PATH="/Volumes/Card/docker"
 

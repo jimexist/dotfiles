@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "ae6059c7-fdf4-401f-989b-f6954521c505"
   core:
     customFileTypes:
       "source.ini": [
@@ -13,6 +16,7 @@
         "BUCK"
       ]
   editor:
+    fontSize: 16
     invisibles:
       cr: "↩"
       tab: "⇥"
