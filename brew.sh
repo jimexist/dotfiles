@@ -60,6 +60,8 @@ brew cask install flux
 brew cask install spectacle
 brew cask install dropbox
 brew cask install skype
+brew cask install iterm2
+brew cask install intellij-idea
 
 # cleanup
 brew cleanup
