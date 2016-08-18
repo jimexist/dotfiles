@@ -45,6 +45,8 @@ brew install watchman
 brew install webkit2png
 brew install xz
 brew install z
+brew install awscli
+brew install git-flow
 
 # casks
 brew cask install java
