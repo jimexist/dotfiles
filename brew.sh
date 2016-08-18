@@ -48,8 +48,18 @@ brew install z
 
 # casks
 brew cask install java
-brew cask install cheatsheet
 brew cask install alfred
+brew cask install google-chrome
+brew cask install slack
+brew cask install atom
+brew cask install spotify
+brew cask install virtualbox
+brew cask install postman
+brew cask install postico
+brew cask install flux
+brew cask install spectacle
+brew cask install dropbox
+brew cask install skype
 
 # cleanup
 brew cleanup
