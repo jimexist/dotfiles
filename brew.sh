@@ -19,9 +19,6 @@ brew install ack
 brew install cowsay
 brew install curl
 brew install dark-mode
-brew install docker
-brew install docker-compose
-brew install docker-machine
 brew install elasticsearch
 brew install elixir
 brew install flow
@@ -64,6 +61,7 @@ brew cask install dropbox
 brew cask install skype
 brew cask install iterm2
 brew cask install intellij-idea
+brew cask install docker
 
 # cleanup
 brew cleanup
