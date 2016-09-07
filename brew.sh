@@ -64,6 +64,12 @@ brew cask install iterm2
 brew cask install intellij-idea
 brew cask install docker
 
+# https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
+brew cask install quicklook-csv betterzipql qlimagesize webpquicklook 
+brew cask install suspicious-package
+
+
 # cleanup
 brew cleanup
 
