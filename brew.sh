@@ -63,6 +63,7 @@ brew cask install skype
 brew cask install iterm2
 brew cask install intellij-idea
 brew cask install docker
+brew cask install the-unarchiver
 
 # https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 

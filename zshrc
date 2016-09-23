@@ -53,6 +53,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 # User configuration
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 # homebrew dir goes first
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"

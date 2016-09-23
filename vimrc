@@ -43,3 +43,6 @@ nnoremap <C-l> <C-w>l
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
 match OverLength /\%81v.\+/
 
+" http://vim.wikia.com/wiki/Editing_crontab
+au BufEnter /private/tmp/crontab.* setl backupcopy=yes
+
