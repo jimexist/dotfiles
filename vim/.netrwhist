@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/jiayu/.continuum'
 let g:netrw_dirhist_2='/Users/jiayu/Desktop/swartz/apply.tex'
 let g:netrw_dirhist_3='/Users/jiayu/Documents/trip/e2e-tests'
 let g:netrw_dirhist_4='/Users/jiayu/Documents/sharefancy/node_modules'
 let g:netrw_dirhist_5='/Users/jiayu/GitHub/triplan/semantic'
 let g:netrw_dirhist_6='/Users/jiayu/Desktop/Codec.java'
+let g:netrw_dirhist_7='/Users/jiayu/Github/lilypad/test'

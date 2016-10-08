@@ -57,8 +57,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-# homebrew dir goes first
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
@@ -111,6 +109,9 @@ alias myIP='wget http://ipinfo.io/ip -qO -'
 
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+
+# homebrew dir goes first
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 source /usr/local/share/zsh/site-functions/_aws
 source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
