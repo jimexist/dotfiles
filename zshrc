@@ -119,3 +119,4 @@ source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 export MACHINE_STORAGE_PATH="/Volumes/Card/docker"
 export DOCKER_HOST=unix:///var/run/docker.sock
 
+export PATH="$HOME/.yarn/bin:$PATH"

@@ -15,8 +15,9 @@
       "source.python": [
         "BUCK"
       ]
+    telemetryConsent: "limited"
   editor:
-    fontSize: 16
+    fontSize: 17
     invisibles:
       cr: "↩"
       tab: "⇥"
