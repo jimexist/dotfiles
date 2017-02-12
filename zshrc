@@ -100,10 +100,9 @@ eval "$(thefuck --alias)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 alias py=ipython
 alias jpt=jupyter
+alias tf="terraform"
 
 alias myIP='wget http://ipinfo.io/ip -qO -'
 
@@ -112,6 +111,8 @@ export PATH="$PATH:$GOPATH/bin"
 
 # homebrew dir goes first
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 source /usr/local/share/zsh/site-functions/_aws
 source /usr/local/share/zsh/site-functions/git-flow-completion.zsh

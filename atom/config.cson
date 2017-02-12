@@ -17,7 +17,7 @@
       ]
     telemetryConsent: "limited"
   editor:
-    fontSize: 17
+    fontFamily: "Fira Code"
     invisibles:
       cr: "↩"
       tab: "⇥"
@@ -30,6 +30,8 @@
     promptWhenFileHasChangedOnDisk: false
   "ide-haskell": {}
   linter: {}
+  "markdown-preview":
+    useGitHubStyle: true
   minimap: {}
   nuclide:
     installRecommendedPackages: true
