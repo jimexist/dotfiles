@@ -121,3 +121,6 @@ export MACHINE_STORAGE_PATH="/Volumes/Card/docker"
 export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+# OPAM configuration
+. /Users/jiayu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
