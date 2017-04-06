@@ -3,5 +3,6 @@
     "editor.fontSize": 14,
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
-    "files.trimTrailingWhitespace": true
-}
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false
+  }
