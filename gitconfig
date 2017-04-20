@@ -1,14 +1,11 @@
 [user]
     name = Jiayu Liu
     email = jiayu@madadata.com
-    signingkey = 234F686F
 [push]
     default = simple
     followTags = true
 [transfer]
     fsckobjects = true
-[commit]
-    gpgSign = true
 [merge]
     ff = only
     conflictstyle = diff3

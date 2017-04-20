@@ -8,10 +8,10 @@ brew install coreutils
 brew install moreutils
 brew install findutils
 brew install binutils
-brew install wget --with-iri
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+brew install wget
+brew install vim --with-override-system-vi
+brew install grep
+brew install openssh
 brew install git
 
 # others
@@ -48,7 +48,6 @@ brew install httpie
 
 # casks
 brew cask install java
-brew cask install alfred
 brew cask install google-chrome
 brew cask install slack
 brew cask install atom
