@@ -1,10 +1,14 @@
-execute pathogen#infect()
 set nocompatible
-map <C-n> :NERDTreeToggle<CR>
-
 filetype off
-filetype plugin indent on
 syntax on
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+
+map <C-n> :NERDTreeToggle<CR>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
