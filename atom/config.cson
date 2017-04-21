@@ -7,6 +7,7 @@
       "source.ini": [
         ".buckconfig"
         ".flowconfig"
+        ".hgrc"
       ]
       "source.json": [
         ".arcconfig"
@@ -15,6 +16,9 @@
       "source.python": [
         "BUCK"
       ]
+    disabledPackages: [
+      "tree-view"
+    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Fira Code"
