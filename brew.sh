@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 brew update
-brew upgrade --all
 
 # core ones
 brew install coreutils
@@ -30,6 +29,7 @@ brew install ngrok
 brew install nmap
 brew install osquery
 brew install postgresql
+brew install jq
 brew install pyenv
 brew install pyenv-virtualenv
 brew install redis
@@ -53,6 +53,7 @@ brew cask install slack
 brew cask install atom
 brew cask install spotify
 brew cask install virtualbox
+brew cask install discord
 brew cask install postman
 brew cask install postico
 brew cask install flux
