@@ -24,3 +24,4 @@ ln -s "${BASEDIR}/ansible_hosts" ~/.ansible_hosts
 mkdir -p ~/.atom
 ln -s "${BASEDIR}/atom/config.cson" ~/.atom/config.cson
 
+ln -s "${BASEDIR}/merlin" ~/.merlin
