@@ -34,7 +34,8 @@
     promptWhenFileHasChangedOnDisk: false
   "ide-haskell": {}
   linter: {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap: {}
