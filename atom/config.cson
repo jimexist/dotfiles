@@ -40,6 +40,7 @@
     useGitHubStyle: true
   minimap: {}
   nuclide:
+    "atom-ide-code-format": {}
     installRecommendedPackages: true
     "nuclide-distraction-free-mode": {}
     "nuclide-home":
