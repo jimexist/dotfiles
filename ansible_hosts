@@ -1,11 +1,6 @@
 [local]
 localhost
 
-[webservers]
-ivy
-madadata
-
 [vpn]
-mada
 mada-sg
 

@@ -16,9 +16,6 @@
       "source.python": [
         "BUCK"
       ]
-    disabledPackages: [
-      "tree-view"
-    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Fira Code"
@@ -35,6 +32,7 @@
   "ide-haskell": {}
   linter: {}
   "linter-ui-default":
+    panelHeight: 69
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
