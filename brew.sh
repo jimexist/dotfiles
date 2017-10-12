@@ -64,8 +64,8 @@ brew cask install docker
 brew cask install the-unarchiver
 
 # https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
-brew cask install quicklook-csv betterzipql qlimagesize webpquicklook 
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
+brew cask install quicklook-csv betterzipql qlimagesize webpquicklook
 brew cask install suspicious-package
 
 # cleanup

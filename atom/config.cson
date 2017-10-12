@@ -16,6 +16,9 @@
       "source.python": [
         "BUCK"
       ]
+    disabledPackages: [
+      "tree-view"
+    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Fira Code"
@@ -31,11 +34,8 @@
     promptWhenFileHasChangedOnDisk: false
   "ide-haskell": {}
   linter: {}
-  "linter-ui-default":
-    panelHeight: 69
-    showPanel: true
-  "markdown-preview":
-    useGitHubStyle: true
+  "linter-ui-default": {}
+  "markdown-preview": {}
   minimap: {}
   nuclide:
     "atom-ide-code-format": {}
@@ -43,6 +43,8 @@
     "nuclide-distraction-free-mode": {}
     "nuclide-home":
       showHome: false
+    use:
+      "atom-ide-diagnostics-ui": false
   "tabs-to-spaces":
     onSave: "untabify"
   welcome:
