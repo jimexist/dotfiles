@@ -114,7 +114,12 @@ source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# OPAM configuration
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh

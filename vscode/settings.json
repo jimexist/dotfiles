@@ -1,8 +1,18 @@
 {
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.fontLigatures": true,
-    "files.trimTrailingWhitespace": true,
-    "git.confirmSync": false
-  }
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": true,
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.formatting.provider": "yapf",
+  "reason.bsb.enabled": true,
+  "reason.formatOnSave": true,
+  "editor.formatOnSave": true,
+  "cSpell.language": "en",
+  "reason.diagnostics.tools": [
+    "merlin",
+    "bsb"
+  ]
+}
