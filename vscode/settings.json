@@ -14,5 +14,15 @@
   "reason.diagnostics.tools": [
     "merlin",
     "bsb"
-  ]
+  ],
+  "cSpell.userWords": [
+    "jiayu",
+    "prebuild",
+    "precommit"
+  ],
+  "rust.rustup": {
+    "toolchain": "stable-x86_64-apple-darwin",
+    "nightlyToolchain": "nightly-x86_64-apple-darwin"
+  },
+  "rust.mode": "legacy"
 }

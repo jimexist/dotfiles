@@ -12,6 +12,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install git
+brew install rg
 
 # others
 brew install ack
