@@ -3,6 +3,7 @@
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
+  "eslint.packageManager": "yarn",
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
   "python.pythonPath": "/usr/local/bin/python3",
@@ -16,13 +17,11 @@
     "bsb"
   ],
   "cSpell.userWords": [
+    "antd",
     "jiayu",
+    "okta",
     "prebuild",
     "precommit"
   ],
-  "rust.rustup": {
-    "toolchain": "stable-x86_64-apple-darwin",
-    "nightlyToolchain": "nightly-x86_64-apple-darwin"
-  },
-  "rust.mode": "legacy"
+  "workbench.colorTheme": "Solarized Dark"
 }

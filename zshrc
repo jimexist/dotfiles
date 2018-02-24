@@ -97,7 +97,7 @@ eval "$(thefuck --alias)"
 alias py="ipython"
 alias jpt="jupyter"
 alias tf="terraform"
-
+alias l="exa -l"
 alias myIP='wget http://ipinfo.io/ip -qO -'
 
 export GOPATH="$HOME/go"
@@ -116,6 +116,7 @@ export DOCKER_HOST=unix:///var/run/docker.sock
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
