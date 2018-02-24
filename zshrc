@@ -97,7 +97,7 @@ eval "$(thefuck --alias)"
 alias py="ipython"
 alias jpt="jupyter"
 alias tf="terraform"
-alias l="exa -l"
+alias l="exa -l --git"
 alias myIP='wget http://ipinfo.io/ip -qO -'
 
 export GOPATH="$HOME/go"

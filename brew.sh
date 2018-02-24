@@ -13,6 +13,9 @@ brew install grep
 brew install openssh
 brew install git
 brew install rg
+brew install tokei
+brew install fd
+brew install exa
 
 # others
 brew install ack
