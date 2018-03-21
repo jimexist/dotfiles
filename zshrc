@@ -97,7 +97,7 @@ eval "$(thefuck --alias)"
 alias py="ipython"
 alias jpt="jupyter"
 alias tf="terraform"
-alias l="exa -l --git"
+alias l="exa -al --git"
 alias myIP='wget http://ipinfo.io/ip -qO -'
 
 export GOPATH="$HOME/go"
@@ -118,9 +118,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+alias prp="pipenv run python"
+

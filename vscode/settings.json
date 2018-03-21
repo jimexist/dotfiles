@@ -1,9 +1,14 @@
 {
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
   "eslint.packageManager": "yarn",
+  "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
   "python.pythonPath": "/usr/local/bin/python3",
@@ -23,5 +28,7 @@
     "prebuild",
     "precommit"
   ],
-  "workbench.colorTheme": "Solarized Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.sideBar.location": "left",
+  "flow.stopFlowOnExit": true,
 }
