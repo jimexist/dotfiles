@@ -47,6 +47,7 @@ brew install z
 brew install awscli
 brew install git-flow
 brew install httpie
+brew install dep
 
 # casks
 brew cask install java
