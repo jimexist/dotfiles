@@ -64,6 +64,7 @@ brew cask install dropbox
 brew cask install skype
 brew cask install iterm2
 brew cask install intellij-idea
+brew cask install goland
 brew cask install docker
 brew cask install the-unarchiver
 
