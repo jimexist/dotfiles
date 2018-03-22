@@ -119,4 +119,3 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 alias prp="pipenv run python"
-
