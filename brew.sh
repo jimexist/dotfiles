@@ -31,7 +31,6 @@ brew install httperf
 brew install maven
 brew install mongodb
 brew install mtr
-brew install ngrok
 brew install nmap
 brew install osquery
 brew install postgresql
@@ -69,6 +68,7 @@ brew cask install intellij-idea
 brew cask install goland
 brew cask install docker
 brew cask install the-unarchiver
+brew cask install ngrok
 
 # https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
