@@ -6,9 +6,6 @@
     followTags = true
 [transfer]
     fsckobjects = true
-[merge]
-    ff = only
-    conflictstyle = diff3
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     prune = fetch --prune
