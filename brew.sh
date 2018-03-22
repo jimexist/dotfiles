@@ -51,6 +51,7 @@ brew install httpie
 brew install dep
 
 # casks
+brew cask install vlc
 brew cask install java
 brew cask install google-chrome
 brew cask install brave
