@@ -1,27 +1,27 @@
 [user]
-    name = Jiayu Liu
-    email = etareduce@gmail.com
+	name = Jiayu Liu
+	email = jimexist@gmail.com
 [push]
-    default = simple
-    followTags = true
+	default = simple
+	followTags = true
 [transfer]
     fsckobjects = true
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    prune = fetch --prune
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	prune = fetch --prune
 [filter "media"]
-    required = true
-    clean = git media clean %f
-    smudge = git media smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
 [filter "hawser"]
-    clean = git hawser clean %f
-    smudge = git hawser smudge %f
-    required = true
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
 [core]
-    autocrlf = input
+	autocrlf = input
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain

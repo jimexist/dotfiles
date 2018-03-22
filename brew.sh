@@ -54,8 +54,7 @@ brew cask install java
 brew cask install google-chrome
 brew cask install brave
 brew cask install slack
-brew cask install atom
-brew cask install spotify
+brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install discord
 brew cask install postman
