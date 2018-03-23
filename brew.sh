@@ -18,6 +18,9 @@ brew install fd
 brew install exa
 brew install python
 brew install python3
+brew install pre-commit
+brew install node
+brew install yarn
 
 # others
 brew install ack
