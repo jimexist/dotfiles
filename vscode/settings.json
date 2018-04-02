@@ -7,6 +7,7 @@
   "eslint.packageManager": "yarn",
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
+  "go.buildOnSave": "package",
   "python.pythonPath": "/usr/local/bin/python3",
   "python.formatting.provider": "yapf",
   "go.useLanguageServer": true,
