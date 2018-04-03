@@ -44,7 +44,6 @@ brew install sqlmap
 brew install thefuck
 brew install tree
 brew install unrar
-brew install watchman
 brew install webkit2png
 brew install xz
 brew install z

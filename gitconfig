@@ -1,6 +1,6 @@
 [user]
 	name = Jiayu Liu
-	email = jimexist@gmail.com
+	email = jiayu.liu@airbnb.com
 [push]
 	default = current
 	followTags = true
@@ -24,7 +24,7 @@
 [core]
 	autocrlf = input
 	precomposeunicode = true
-	excludesfile = /Users/loaner/.gitignore_global
+	excludesfile = /Users/jiayu_liu/.gitignore_global
 	sparseCheckout = true
 [credential]
 	helper = osxkeychain
