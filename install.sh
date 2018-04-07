@@ -24,4 +24,9 @@ ln -s "${BASEDIR}/ansible_hosts" ~/.ansible_hosts
 mkdir -p ~/.atom
 ln -s "${BASEDIR}/atom/config.cson" ~/.atom/config.cson
 
+# vscode
+mkdir -p ~/.vscode
+ln -s "${BASEDIR}/vscode/settings.json" ~/.vscode/settings.json
+
+# merlin
 ln -s "${BASEDIR}/merlin" ~/.merlin

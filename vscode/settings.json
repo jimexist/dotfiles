@@ -1,34 +1,20 @@
 {
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
   "eslint.packageManager": "yarn",
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
-  "git.confirmSync": false,
   "python.pythonPath": "/usr/local/bin/python3",
   "python.formatting.provider": "yapf",
-  "reason.bsb.enabled": true,
-  "reason.formatOnSave": true,
+  "go.useLanguageServer": true,
   "editor.formatOnSave": true,
-  "cSpell.language": "en",
-  "reason.diagnostics.tools": [
-    "merlin",
-    "bsb"
-  ],
-  "cSpell.userWords": [
-    "antd",
-    "jiayu",
-    "okta",
-    "prebuild",
-    "precommit"
-  ],
+  "reason.diagnostics.tools": ["merlin", "bsb"],
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.sideBar.location": "left",
   "flow.stopFlowOnExit": true,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false
 }
