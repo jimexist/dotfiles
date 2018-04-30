@@ -1,5 +1,4 @@
-#!/usr/bin/env sh
-
+#!/bin/bash
 brew update
 
 # core ones
@@ -21,6 +20,7 @@ brew install python3
 brew install pre-commit
 brew install node
 brew install yarn
+brew install pipenv
 
 # others
 brew install ack

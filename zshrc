@@ -119,3 +119,14 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 alias prp="pipenv run python"
+
+# AIRLAB-DO-NOT-MODIFY section:ShellWrapper {{{
+# Airlab will only make edits inside these delimiters.
+
+# Source Airlab's shell integration, if it exists.
+if [ -e ~/.airlab/shellhelper.sh ]; then
+  source ~/.airlab/shellhelper.sh
+fi
+# AIRLAB-DO-NOT-MODIFY section:ShellWrapper }}}
+
+alias sc="npm run -s sanity-check --"

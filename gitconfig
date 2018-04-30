@@ -2,7 +2,7 @@
 	name = Jiayu Liu
 	email = jimexist@gmail.com
 [push]
-	default = simple
+	default = current
 	followTags = true
 [transfer]
     fsckobjects = true
@@ -23,5 +23,10 @@
 	required = true
 [core]
 	autocrlf = input
+	precomposeunicode = true
+	excludesfile = /Users/loaner/.gitignore_global
+	sparseCheckout = true
 [credential]
 	helper = osxkeychain
+[rerere]
+	enabled = true
