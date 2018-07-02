@@ -119,6 +119,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 alias prp="pipenv run python"
+alias prjn="pipenv run jupyter notebook"
 
 # AIRLAB-DO-NOT-MODIFY section:ShellWrapper {{{
 # Airlab will only make edits inside these delimiters.
@@ -130,3 +131,8 @@ fi
 # AIRLAB-DO-NOT-MODIFY section:ShellWrapper }}}
 
 alias sc="npm run -s sanity-check --"
+
+alias fix='bundle install && npm install && sudo service micasa restart && sudo service aeon restart && sudo service gringott restart && sudo service oyster restart && sudo service nginx restart && sudo service monorail restart &&  sudo service monorail-webpack restart'
+
+# OPAM configuration
+. /Users/jiayu_liu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
