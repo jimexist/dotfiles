@@ -1,6 +1,4 @@
 {
-  "cSpell.language": "en",
-  "cSpell.userWords": ["jiayu"],
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -8,29 +6,30 @@
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [100, 120],
   "editor.tabSize": 2,
-  "eslint.packageManager": "yarn",
   "files.associations": {
-    "*.wpy": "vue"
+    "*.mina": "vue",
+    "*.wxml": "vue-html",
+    "*.wxss": "postcss"
   },
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "flow.stopFlowOnExit": true,
-  "flow.useNPMPackagedFlow": true,
-  "gitlens.historyExplorer.enabled": true,
   "go.buildOnSave": "package",
   "go.useLanguageServer": true,
   "javascript.validate.enable": false,
   "python.formatting.provider": "yapf",
-  "python.pythonPath": "/usr/local/bin/python3",
-  "reason.bsb.enabled": true,
   "reason.diagnostics.tools": ["merlin", "bsb"],
-  "reason.formatOnSave": true,
   "ruby.lint": {
     "rubocop": true,
     "ruby": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorTheme": "Visual Studio Dark",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "window.zoomLevel": 0,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.defaultDateStyle": "absolute"
 }
