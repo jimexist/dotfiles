@@ -6,30 +6,61 @@
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [100, 120],
   "editor.tabSize": 2,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
   "files.associations": {
     "*.mina": "vue",
     "*.wxml": "vue-html",
     "*.wxss": "postcss"
   },
+  "vetur.grammar.customBlocks": {
+    "config": "json"
+  },
+  "vetur.format.defaultFormatter.html": "prettier",
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "go.buildOnSave": "package",
   "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
   "javascript.validate.enable": false,
   "python.formatting.provider": "yapf",
-  "reason.diagnostics.tools": ["merlin", "bsb"],
   "ruby.lint": {
     "rubocop": true,
     "ruby": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Monokai",
   "workbench.sideBar.location": "left",
   "window.zoomLevel": 0,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.defaultDateStyle": "absolute"
+  "gitlens.defaultDateStyle": "absolute",
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "files.autoSaveDelay": 3000,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

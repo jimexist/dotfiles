@@ -136,3 +136,11 @@ alias fix='bundle install && npm install && sudo service micasa restart && sudo 
 
 # OPAM configuration
 . /Users/jiayu_liu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export GPG_TTY=$(tty)
+
+alias b="bat"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+eval "$(rbenv init -)"

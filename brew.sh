@@ -15,7 +15,6 @@ brew install rg
 brew install tokei
 brew install fd
 brew install exa
-brew install python
 brew install python3
 brew install pre-commit
 brew install node
