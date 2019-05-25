@@ -117,6 +117,13 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin/"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+export GPG_TTY=$(tty)
+alias b="bat"
+
+if [ -e ~/.rbenv/bin ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 alias prp="pipenv run python"
 alias prjn="pipenv run jupyter notebook"
@@ -133,12 +140,6 @@ fi
 alias sc="npm run -s sanity-check --"
 
 # OPAM configuration
-. /Users/jiayu_liu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null || true
 
-export GPG_TTY=$(tty)
 
-alias b="bat"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-
-eval "$(rbenv init -)"
