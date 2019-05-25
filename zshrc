@@ -115,7 +115,7 @@ export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
+export PATH="$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin/"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 alias prp="pipenv run python"
@@ -131,8 +131,6 @@ fi
 # AIRLAB-DO-NOT-MODIFY section:ShellWrapper }}}
 
 alias sc="npm run -s sanity-check --"
-
-alias fix='bundle install && npm install && sudo service micasa restart && sudo service aeon restart && sudo service gringott restart && sudo service oyster restart && sudo service nginx restart && sudo service monorail restart &&  sudo service monorail-webpack restart'
 
 # OPAM configuration
 . /Users/jiayu_liu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
