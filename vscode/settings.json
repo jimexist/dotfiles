@@ -43,7 +43,7 @@
     "ruby": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.sideBar.location": "left",
   "window.zoomLevel": 0,
   "gitlens.advanced.messages": {
@@ -62,5 +62,32 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.jediEnabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "Alipay",
+    "ENTRYPOINT",
+    "Goji",
+    "Lifecycle",
+    "SIGNUP",
+    "UPSELL",
+    "firestore",
+    "hyperloop",
+    "jiayu",
+    "middlewares",
+    "miniapp",
+    "miniprogram",
+    "promisify",
+    "repo",
+    "wechat",
+    "weixin",
+    "xiaohongshu"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "newUntitledFile"
 }
