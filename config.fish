@@ -51,6 +51,7 @@ alias l="exa -al --git"
 alias myIP='wget http://ipinfo.io/ip -qO -'
 alias b="bat"
 alias sc="npm run -s sanity-check --"
+alias g="git"
 
 function gst
   git status $argv
