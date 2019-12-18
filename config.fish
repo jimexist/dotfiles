@@ -1,3 +1,5 @@
+set -g -x fish_greeting ''
+
 # use vim
 set -x EDITOR vim
 
