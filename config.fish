@@ -1,4 +1,4 @@
-set -g -x fish_greeting ''
+set -x fish_greeting ''
 
 # use vim
 set -x EDITOR vim
@@ -19,7 +19,7 @@ set -x GOPATH $HOME/go
 set -x GOROOT /usr/local/opt/go/libexec
 
 # Path
-set -U fish_user_paths \
+set -x PATH \
   /usr/local/bin \
   /usr/local/sbin \
   /usr/local/opt/ruby/bin \
@@ -36,11 +36,11 @@ set -U fish_user_paths \
   (brew --prefix coreutils)/libexec/gnubin \
   (brew --prefix binutils)/bin \
   /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin \
-  $fish_user_paths
+  $PATH
 
 set -x JAVA_HOME (/usr/libexec/java_home)
 
-set -U MANPATH /usr/local/man $MANPATH
+set -x MANPATH /usr/local/man $MANPATH
 
 thefuck --alias | source
 
