@@ -89,5 +89,8 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
