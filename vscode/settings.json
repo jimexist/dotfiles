@@ -92,5 +92,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
