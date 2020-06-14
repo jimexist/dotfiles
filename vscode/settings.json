@@ -81,6 +81,7 @@
     "miniapp",
     "miniprogram",
     "promisify",
+    "pubsub",
     "repo",
     "wechat",
     "weixin",
@@ -95,5 +96,9 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "dart.debugExternalLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "java.semanticHighlighting.enabled": true,
+  "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
 }

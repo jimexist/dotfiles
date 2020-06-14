@@ -94,11 +94,7 @@ export LANG=en_US.UTF-8
 
 eval "$(thefuck --alias)"
 
-alias py="ipython"
-alias jpt="jupyter"
-alias tf="terraform"
 alias l="exa -al --git"
-alias myIP='wget http://ipinfo.io/ip -qO -'
 
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/opt/go/libexec"
@@ -114,6 +110,7 @@ source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/Downloads/flutter/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin/"
 export PATH="$HOME/.ghcup/env:$HOME/.ghcup/bin:$PATH"
@@ -125,9 +122,6 @@ if [ -e ~/.rbenv/bin ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
-
-alias prp="pipenv run python"
-alias prjn="pipenv run jupyter notebook"
 
 # AIRLAB-DO-NOT-MODIFY section:ShellWrapper {{{
 # Airlab will only make edits inside these delimiters.
@@ -153,4 +147,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 eval "$(starship init zsh)"
-
