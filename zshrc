@@ -45,7 +45,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z git docker encode64 npm yarn python history)
+plugins=(z git docker encode64 history)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,5 +139,14 @@ export K2=true
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jiayu_liu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jiayu_liu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jiayu_liu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jiayu_liu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
 eval "$(starship init zsh)"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=$JAVA_HOME/bin:$PATH
 

@@ -37,7 +37,7 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "javascript.validate.enable": false,
-  "python.formatting.provider": "yapf",
+  "python.formatting.provider": "black",
   "ruby.lint": {
     "rubocop": true,
     "ruby": true
@@ -100,5 +100,24 @@
   "dart.debugExternalLibraries": true,
   "dart.debugSdkLibraries": false,
   "java.semanticHighlighting.enabled": true,
-  "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
+  "python.pythonPath": "/usr/bin/python3",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "tabnine.experimentalAutoImports": true,
+  "explorer.confirmDelete": false
 }

@@ -19,16 +19,18 @@
 	smudge = git hawser smudge %f
 	required = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [core]
 	autocrlf = input
 	precomposeunicode = true
 	excludesfile = /Users/jiayu_liu/.gitignore_global
-	sparseCheckout = true
 [credential]
 	helper = osxkeychain
 [rerere]
 	enabled = true
 
+[init]
+	defaultBranch = main
