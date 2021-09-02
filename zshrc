@@ -68,7 +68,7 @@ export PATH="$PATH:/opt/X11/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
-[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
+[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -105,8 +105,6 @@ export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 # homebrew dir goes first
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-source /usr/local/share/zsh/site-functions/_aws
-
 export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -130,9 +128,6 @@ if [ -e ~/.airlab/shellhelper.sh ]; then
 fi
 # AIRLAB-DO-NOT-MODIFY section:ShellWrapper }}}
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export HRL=true
 export K2=true
 
@@ -147,6 +142,5 @@ if [ -f '/Users/jiayu_liu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then
 
 eval "$(starship init zsh)"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$JAVA_HOME/bin:$PATH
 

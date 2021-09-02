@@ -45,7 +45,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorTheme": "Monokai Dimmed",
   "workbench.sideBar.location": "left",
-  "window.zoomLevel": 0,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -119,5 +118,14 @@
     "editor.wordBasedSuggestions": false
   },
   "tabnine.experimentalAutoImports": true,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
 }
