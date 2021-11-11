@@ -45,27 +45,27 @@ brew install awscli
 brew install httpie
 
 # casks
-brew install --cask vlc
-brew install --cask java
-brew install --cask google-chrome
-brew install --cask slack
-brew install --cask visual-studio-code
-brew install --cask virtualbox
-brew install --cask postman
-brew install --cask postico
-brew install --cask rectangle
-brew install --cask dropbox
-brew install --cask iterm2
-brew install --cask intellij-idea
-brew install --cask goland
-brew install --cask docker
-brew install --cask the-unarchiver
-brew install --cask ngrok
+brew install vlc
+brew install java
+brew install google-chrome
+brew install slack
+brew install visual-studio-code
+brew install virtualbox
+brew install postman
+brew install postico
+brew install rectangle
+brew install dropbox
+brew install iterm2
+brew install intellij-idea
+brew install goland
+brew install docker
+brew install the-unarchiver
+brew install ngrok
 
 # https://github.com/sindresorhus/quick-look-plugins
-brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
-brew install --cask quicklook-csv betterzipql qlimagesize webpquicklook
-brew install --cask suspicious-package
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
+brew install quicklook-csv betterzipql qlimagesize webpquicklook
+brew install suspicious-package
 
 # cleanup
 brew cleanup
