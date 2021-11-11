@@ -1,7 +1,6 @@
 [user]
 	name = Jiayu Liu
-	email = jiayu.liu@airbnb.com
-	signingkey = D1D757445062AD54
+	email = jiayu@hey.com
 [push]
 	default = current
 	followTags = true
