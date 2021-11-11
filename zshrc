@@ -62,6 +62,7 @@ export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/opt/homebrew/opt/openjdk/bin"
 export PATH="$PATH:/opt/X11/bin"
 [[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 [[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix binutils)/bin"
@@ -92,7 +93,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(thefuck --alias)"
 
 alias l="exa -al --git"
 alias b="bat"
@@ -121,6 +121,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 eval "$(starship init zsh)"
+eval "$(thefuck --alias)"
 
 export PATH=$JAVA_HOME/bin:$PATH
 
