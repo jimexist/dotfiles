@@ -25,12 +25,10 @@
 [core]
 	autocrlf = input
 	precomposeunicode = true
-	excludesfile = /Users/jiayu_liu/.gitignore_global
+	excludesfile = /Users/jiayu/.gitignore_global
 [credential]
 	helper = osxkeychain
 [rerere]
 	enabled = true
-[init]
-	defaultBranch = main
 [pull]
 	rebase = true
