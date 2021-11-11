@@ -7,7 +7,7 @@ brew install moreutils
 brew install findutils
 brew install binutils
 brew install wget
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install git
