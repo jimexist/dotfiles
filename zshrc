@@ -61,11 +61,14 @@ export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/sbin"
+
+# homebrew dir goes first
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/homebrew/opt/openjdk/bin"
 export PATH="$PATH:/opt/X11/bin"
-[[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
-[[ -s /usr/local/bin/brew ]] && export PATH="$PATH:$(brew --prefix binutils)/bin"
+export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
+export PATH="$PATH:$(brew --prefix binutils)/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
@@ -102,8 +105,6 @@ export GOROOT="/usr/local/opt/go/libexec"
 
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
-# homebrew dir goes first
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export DOCKER_HOST=unix:///var/run/docker.sock
 
