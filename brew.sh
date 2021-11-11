@@ -23,9 +23,7 @@ brew install pipenv
 
 # others
 brew install ack
-brew install cowsay
-brew install curl
-brew install dark-mode
+brew install curlq
 brew install elixir
 brew install httperf
 brew install mtr
@@ -34,7 +32,6 @@ brew install postgresql
 brew install jq
 brew install redis
 brew install sqlite
-brew install sqlmap
 brew install thefuck
 brew install tree
 brew install unrar
@@ -45,6 +42,7 @@ brew install awscli
 brew install httpie
 
 # casks
+brew install iterm2
 brew install vlc
 brew install java
 brew install google-chrome
@@ -55,16 +53,14 @@ brew install postman
 brew install postico
 brew install rectangle
 brew install dropbox
-brew install iterm2
 brew install intellij-idea
-brew install goland
 brew install docker
 brew install the-unarchiver
 brew install ngrok
 
 # https://github.com/sindresorhus/quick-look-plugins
 brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
-brew install quicklook-csv betterzipql qlimagesize webpquicklook
+brew install quicklook-csv qlimagesize webpquicklook
 brew install suspicious-package
 
 # cleanup
