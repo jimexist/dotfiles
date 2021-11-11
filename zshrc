@@ -103,14 +103,12 @@ export GOROOT="/usr/local/opt/go/libexec"
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # homebrew dir goes first
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export DOCKER_HOST=unix:///var/run/docker.sock
 
 export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="$HOME/Downloads/flutter/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="$HOME/.ghcup/env:$HOME/.ghcup/bin:$PATH"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export GPG_TTY=$(tty)
 
@@ -119,26 +117,8 @@ if [ -e ~/.rbenv/bin ]; then
   eval "$(rbenv init -)"
 fi
 
-# AIRLAB-DO-NOT-MODIFY section:ShellWrapper {{{
-# Airlab will only make edits inside these delimiters.
-
-# Source Airlab's shell integration, if it exists.
-if [ -e ~/.airlab/shellhelper.sh ]; then
-  source ~/.airlab/shellhelper.sh
-fi
-# AIRLAB-DO-NOT-MODIFY section:ShellWrapper }}}
-
-export HRL=true
-export K2=true
-
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jiayu_liu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jiayu_liu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jiayu_liu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jiayu_liu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(starship init zsh)"
 

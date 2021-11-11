@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/jiayu/Github/lilypad-data-center/config'
-let g:netrw_dirhist_2='/Users/jiayuliu/GitHub/rejq'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/jiayu/Documents/GitHub/dotfiles'
+let g:netrw_dirhist_2='/Users/jiayu/Documents/GitHub'
+let g:netrw_dirhist_1='/Users/jiayu/Documents/GitHub/dotfiles'
