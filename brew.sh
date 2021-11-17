@@ -53,7 +53,7 @@ brew install postman
 brew install postico
 brew install rectangle
 brew install dropbox
-brew install intellij-idea
+brew install intellij-idea-ce
 brew install docker
 brew install the-unarchiver
 brew install ngrok
