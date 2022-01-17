@@ -65,14 +65,14 @@ export PATH="$PATH:/sbin"
 # homebrew dir goes first
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/opt/homebrew/opt/openjdk/bin"
+export PATH="$PATH:$(brew --prefix openjdk)/bin"
 export PATH="$PATH:/opt/X11/bin"
 export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix binutils)/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
-[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME="$(brew --prefix openjdk@11)/libexec/openjdk.jdk/Contents/Home"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -85,7 +85,7 @@ export LANG=en_US.UTF-8
 # fi # Compilation flags # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH=" ~/.ssh/id_ed25519"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -101,14 +101,12 @@ alias l="exa -al --git"
 alias b="bat"
 
 export GOPATH="$HOME/go"
-export GOROOT="/usr/local/opt/go/libexec"
+export GOROOT="$(brew --prefix go)/libexec"
 
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
+export DOCKER_HOST="unix:///var/run/docker.sock"
 
-export DOCKER_HOST=unix:///var/run/docker.sock
-
-export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export GPG_TTY=$(tty)
