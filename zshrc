@@ -65,14 +65,16 @@ export PATH="$PATH:/sbin"
 # homebrew dir goes first
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$(brew --prefix openjdk)/bin"
+export PATH="$(brew --prefix openjdk)/bin:$PATH"
+export PATH="$(brew --prefix bison)/bin:$PATH"
+export PATH="$(brew --prefix make)/libexec/gnubin:$PATH"
 export PATH="$PATH:/opt/X11/bin"
 export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix binutils)/bin"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 
 export MANPATH="/usr/local/man:$MANPATH"
-export JAVA_HOME="$(brew --prefix openjdk@11)/libexec/openjdk.jdk/Contents/Home"
+export JAVA_HOME="$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -123,5 +125,3 @@ eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
 eval "$(starship init zsh)"
 eval "$(thefuck --alias)"
-
-export PATH=$JAVA_HOME/bin:$PATH
