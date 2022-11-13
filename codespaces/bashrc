@@ -1,3 +1,5 @@
 export EDITOR=vim
 
+source "$HOME/.cargo/env"
+
 eval "$(starship init bash)"
