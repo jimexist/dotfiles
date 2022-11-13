@@ -16,3 +16,11 @@ ln -sf "${BASEDIR}/gitignore" ~/.gitignore
 
 # postgres
 ln -sf "${BASEDIR}/psqlrc" ~/.psqlrc
+
+# install or update starship
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
+HOST_NAME="$(uname -o)"
+if [[ "${HOST_NAME}" == *"codespaces-"* ]]; then
+  eval "$(starship init bash)"
+fi
