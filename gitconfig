@@ -1,6 +1,7 @@
 [user]
 	name = Jiayu Liu
 	email = jiayu@hey.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJCYW+YQ4WLwF3vfPhk4Gt7nJ6ZH7SsI7BtZ8TpPvYM9 jiayu@hey.com
 [push]
 	default = current
 	followTags = true
@@ -32,3 +33,9 @@
 	enabled = true
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
