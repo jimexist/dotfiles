@@ -21,6 +21,6 @@ ln -sf "${BASEDIR}/psqlrc" ~/.psqlrc
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 HOST_NAME="$(uname -n)"
-if [[ "${HOST_NAME}" == *"codespaces-"* ]]; then
+if [[ "${HOST_NAME}" == "codespaces-"* ]]; then
   eval "$(starship init bash)"
 fi
