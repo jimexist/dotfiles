@@ -9,12 +9,12 @@ ln -sf "${BASEDIR}/gitignore" ~/.gitignore
 ln -sf "${BASEDIR}/psqlrc" ~/.psqlrc
 
 # install oh my zsh
-if ! command -v omz &> /dev/null
-then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-else
-  omz update
-fi
+# if ! command -v omz &> /dev/null
+# then
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# else
+#   omz update
+# fi
 
 # install or update starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
