@@ -3,23 +3,22 @@ set -euf -o pipefail
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# vim
 ln -sf "${BASEDIR}/vimrc" ~/.vimrc
 ln -sf "${BASEDIR}/vim" ~/.vim
-
-# zsh
-ln -sf "${BASEDIR}/zshrc" ~/.zshrc
-
-# git
-ln -sf "${BASEDIR}/gitconfig" ~/.gitconfig
 ln -sf "${BASEDIR}/gitignore" ~/.gitignore
-
-# postgres
 ln -sf "${BASEDIR}/psqlrc" ~/.psqlrc
 
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # install or update starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 if [[ "$(uname -n)" == *"codespaces-"* ]]; then
-  eval "$(starship init bash)"
+  ln -sf "${BASEDIR}/codespaces/zshrc" ~/.zshrc
+  ln -sf "${BASEDIR}/codespaces/gitconfig" ~/.gitconfig
+else
+  ln -sf "${BASEDIR}/zshrc" ~/.zshrc
+  ln -sf "${BASEDIR}/gitconfig" ~/.gitconfig
 fi
+
+chsh -s $(which zsh)
