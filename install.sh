@@ -9,7 +9,7 @@ ln -sf "${BASEDIR}/gitignore" ~/.gitignore
 ln -sf "${BASEDIR}/psqlrc" ~/.psqlrc
 
 # install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 # install or update starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
@@ -21,4 +21,4 @@ else
   ln -sf "${BASEDIR}/gitconfig" ~/.gitconfig
 fi
 
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
