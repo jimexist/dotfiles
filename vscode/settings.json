@@ -3,129 +3,46 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
-  "editor.renderWhitespace": "boundary",
-  "editor.rulers": [100, 120],
-  "editor.tabSize": 2,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue",
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
+  "editor.rulers": [
+    100,
+    120
   ],
-  "files.associations": {
-    "*.mina": "vue",
-    "*.wxml": "vue-html",
-    "*.wxss": "postcss"
-  },
-  "vetur.grammar.customBlocks": {
-    "config": "json"
-  },
-  "vetur.format.defaultFormatter.html": "prettier",
+  "editor.tabSize": 2,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "go.buildOnSave": "package",
-  "go.useLanguageServer": true,
-  "go.lintTool": "golangci-lint",
-  "go.lintFlags": ["--fast"],
-  "javascript.validate.enable": false,
-  "python.formatting.provider": "black",
-  "ruby.lint": {
-    "rubocop": true,
-    "ruby": true
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Monokai Dimmed",
-  "workbench.sideBar.location": "left",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.defaultDateStyle": "absolute",
-  "explorer.confirmDragAndDrop": false,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "files.autoSaveDelay": 3000,
+  "cSpell.userWords": [
+    "Alipay",
+    "bootcamp",
+    "ENTRYPOINT",
+    "firestore",
+    "jiayu",
+    "middlewares",
+    "repo",
+    "roadmap",
+    "simd"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "editor.suggestSelection": "first",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "python.jediEnabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.userWords": [
-    "Alipay",
-    "ENTRYPOINT",
-    "Goji",
-    "Lifecycle",
-    "SIGNUP",
-    "UPSELL",
-    "firestore",
-    "hyperloop",
-    "jiayu",
-    "middlewares",
-    "miniapp",
-    "miniprogram",
-    "promisify",
-    "pubsub",
-    "repo",
-    "wechat",
-    "weixin",
-    "xiaohongshu"
-  ],
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "dart.debugExternalLibraries": true,
-  "dart.debugSdkLibraries": false,
-  "java.semanticHighlighting.enabled": true,
-  "python.pythonPath": "/usr/bin/python3",
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "python.languageServer": "Pylance",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  },
-  "tabnine.experimentalAutoImports": true,
-  "explorer.confirmDelete": false,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "workbench.editor.untitled.hint": "hidden",
-  "python.defaultInterpreterPath": "/usr/bin/python3",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  }
+  "editor.bracketPairColorization.enabled": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.tabCompletion": "on",
+  "python.formatting.provider": "black",
+  "editor.stickyTabStops": true,
+  "git.autofetch": true
 }
