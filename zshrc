@@ -122,3 +122,16 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
 eval "$(starship init zsh)"
+
+
+function proxy_on() {
+    export http_proxy=http://127.0.0.1:7890
+    export https_proxy=http://127.0.0.1:7890
+    echo -e "Proxy is turned on"
+}
+
+function proxy_off(){
+    unset http_proxy https_proxy
+    echo -e "Proxy is turned off"
+}
+
