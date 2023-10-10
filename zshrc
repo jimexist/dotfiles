@@ -45,7 +45,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z git docker encode64 history)
+plugins=(z git docker encode64 history rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,7 +65,7 @@ export PATH="$PATH:/sbin"
 # homebrew dir goes first
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$(brew --prefix openjdk)/bin:$PATH"
+# export PATH="$(brew --prefix openjdk)/bin:$PATH"
 export PATH="$(brew --prefix bison)/bin:$PATH"
 export PATH="$(brew --prefix make)/libexec/gnubin:$PATH"
 export PATH="$PATH:/opt/X11/bin"
@@ -110,10 +110,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export GPG_TTY=$(tty)
 
-if [ -e ~/.rbenv/bin ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -122,11 +118,11 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
 eval "$(starship init zsh)"
-
+eval "$(rbenv init -)"
 
 function proxy_on() {
-    export http_proxy=http://127.0.0.1:7890
-    export https_proxy=http://127.0.0.1:7890
+    export http_proxy=http://127.0.0.1:54728
+    export https_proxy=http://127.0.0.1:54728
     echo -e "Proxy is turned on"
 }
 
@@ -135,3 +131,13 @@ function proxy_off(){
     echo -e "Proxy is turned off"
 }
 
+function jhome() {
+  export JAVA_HOME=`/usr/libexec/java_home -v $@`
+  echo "JAVA_HOME:" $JAVA_HOME
+  echo "java -version:"
+  java -version
+}
+
+# Wasmer
+export WASMER_DIR="/Users/jiayu/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
