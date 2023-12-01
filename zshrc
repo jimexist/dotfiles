@@ -141,3 +141,6 @@ function jhome() {
 # Wasmer
 export WASMER_DIR="/Users/jiayu/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
