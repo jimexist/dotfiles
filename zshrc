@@ -64,6 +64,16 @@ export PATH="$PATH:/sbin"
 
 # homebrew dir goes first
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+if [ "$TERM_PROGRAM"  = 'iTerm.app' ]; then
+    tmux has -t hack &> /dev/null
+    if [ $? != 0 ]; then
+        tmux new -s hack
+    elif [ -z $TMUX ]; then
+        tmux attach -t hack
+    fi
+fi
+
 export PATH="$PATH:$HOME/.local/bin"
 # export PATH="$(brew --prefix openjdk)/bin:$PATH"
 export PATH="$(brew --prefix bison)/bin:$PATH"
@@ -118,7 +128,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
 eval "$(starship init zsh)"
-eval "$(rbenv init -)"
 
 function proxy_on() {
     export http_proxy=http://127.0.0.1:54728
@@ -137,10 +146,6 @@ function jhome() {
   echo "java -version:"
   java -version
 }
-
-# Wasmer
-export WASMER_DIR="/Users/jiayu/.wasmer"
-[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
