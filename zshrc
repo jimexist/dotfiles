@@ -65,14 +65,14 @@ export PATH="$PATH:/sbin"
 # homebrew dir goes first
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-if [ "$TERM_PROGRAM"  = 'iTerm.app' ]; then
-    tmux has -t hack &> /dev/null
-    if [ $? != 0 ]; then
-        tmux new -s hack
-    elif [ -z $TMUX ]; then
-        tmux attach -t hack
-    fi
-fi
+# if [ "$TERM_PROGRAM"  = 'iTerm.app' ]; then
+#     tmux has -t hack &> /dev/null
+#     if [ $? != 0 ]; then
+#         tmux new -s hack
+#     elif [ -z $TMUX ]; then
+#         tmux attach -t hack
+#     fi
+# fi
 
 export PATH="$PATH:$HOME/.local/bin"
 # export PATH="$(brew --prefix openjdk)/bin:$PATH"
@@ -106,7 +106,6 @@ export SSH_KEY_PATH=" ~/.ssh/id_ed25519"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-alias l="exa -al --git"
 alias b="bat"
 
 export GOPATH="$HOME/go"
@@ -149,3 +148,6 @@ function jhome() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
