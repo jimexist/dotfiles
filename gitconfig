@@ -1,6 +1,6 @@
 [user]
 	name = Jiayu Liu
-	email = jiayu@hey.com
+	email = jimexist@gmail.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJCYW+YQ4WLwF3vfPhk4Gt7nJ6ZH7SsI7BtZ8TpPvYM9 jiayu@hey.com
 [push]
 	default = current
@@ -10,6 +10,9 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	prune = fetch --prune
+	wta = "!f() { git worktree add -b \"$1\" \"../$1\"; }; f"
+	wtr = "!f() { git worktree remove \"../$1\"; }; f"
+	wtl = "!f() { git worktree list; }; f"
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -34,3 +37,12 @@
 	format = ssh
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[lfs "customtransfer.xet"]
+	path = git-xet
+	args = transfer
+	concurrent = true
