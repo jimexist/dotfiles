@@ -55,7 +55,8 @@ brew install \
   rectangle \
   docker \
   the-unarchiver \
-  ngrok
+  ngrok \
+  ghostty
 
 # https://github.com/sindresorhus/quick-look-plugins
 brew install \
