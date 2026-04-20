@@ -15,18 +15,11 @@ brew install \
   rg \
   tokei \
   fd \
-  exa \
   python3 \
-  pre-commit \
-  node \
-  yarn \
-  pipenv
+  node
 
 # others
 brew install \
-  ack \
-  curlq \
-  elixir \
   httperf \
   mtr \
   nmap \
@@ -49,7 +42,6 @@ brew install \
   java \
   google-chrome \
   slack \
-  virtualbox \
   postman \
   postico \
   rectangle \
