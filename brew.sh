@@ -45,18 +45,15 @@ brew install \
 
 # casks
 brew install \
-  iterm2 \
   vlc \
   java \
   google-chrome \
   slack \
-  visual-studio-code \
   virtualbox \
   postman \
   postico \
   rectangle \
   dropbox \
-  intellij-idea-ce \
   docker \
   the-unarchiver \
   ngrok
