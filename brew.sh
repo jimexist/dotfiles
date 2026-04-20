@@ -12,6 +12,7 @@ brew install \
   grep \
   openssh \
   git \
+  gh \
   rg \
   tokei \
   fd \
@@ -48,7 +49,8 @@ brew install \
   docker \
   the-unarchiver \
   ngrok \
-  ghostty
+  ghostty \
+  spotify
 
 # https://github.com/sindresorhus/quick-look-plugins
 brew install \
