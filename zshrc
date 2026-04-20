@@ -164,6 +164,7 @@ compinit
 # End of Docker CLI completions
 
 alias c="open $1 -a 'Cursor'"
+alias pn="pnpm"
 export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -171,3 +172,5 @@ if [ -f '/Users/jiayu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jiayu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jiayu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+alias cc='claude --enable-auto-mode'

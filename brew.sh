@@ -2,66 +2,73 @@
 brew update
 
 # core ones
-brew install coreutils
-brew install moreutils
-brew install findutils
-brew install binutils
-brew install wget
-brew install vim
-brew install grep
-brew install openssh
-brew install git
-brew install rg
-brew install tokei
-brew install fd
-brew install exa
-brew install python3
-brew install pre-commit
-brew install node
-brew install yarn
-brew install pipenv
+brew install \
+  coreutils \
+  moreutils \
+  findutils \
+  binutils \
+  wget \
+  vim \
+  grep \
+  openssh \
+  git \
+  rg \
+  tokei \
+  fd \
+  exa \
+  python3 \
+  pre-commit \
+  node \
+  yarn \
+  pipenv
 
 # others
-brew install ack
-brew install curlq
-brew install elixir
-brew install httperf
-brew install mtr
-brew install nmap
-brew install postgresql
-brew install jq
-brew install redis
-brew install sqlite
-brew install thefuck
-brew install tree
-brew install unrar
-brew install webkit2png
-brew install xz
-brew install z
-brew install awscli
-brew install httpie
+brew install \
+  ack \
+  curlq \
+  elixir \
+  httperf \
+  mtr \
+  nmap \
+  postgresql \
+  jq \
+  redis \
+  sqlite \
+  thefuck \
+  tree \
+  unrar \
+  webkit2png \
+  xz \
+  z \
+  awscli \
+  httpie
 
 # casks
-brew install iterm2
-brew install vlc
-brew install java
-brew install google-chrome
-brew install slack
-brew install visual-studio-code
-brew install virtualbox
-brew install postman
-brew install postico
-brew install rectangle
-brew install dropbox
-brew install intellij-idea-ce
-brew install docker
-brew install the-unarchiver
-brew install ngrok
+brew install \
+  vlc \
+  java \
+  google-chrome \
+  slack \
+  virtualbox \
+  postman \
+  postico \
+  rectangle \
+  docker \
+  the-unarchiver \
+  ngrok \
+  ghostty
 
 # https://github.com/sindresorhus/quick-look-plugins
-brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch
-brew install quicklook-csv qlimagesize webpquicklook
-brew install suspicious-package
+brew install \
+  qlcolorcode \
+  qlstephen \
+  qlmarkdown \
+  quicklook-json \
+  qlprettypatch \
+  quicklook-csv \
+  qlimagesize \
+  webpquicklook \
+  suspicious-package
 
 # cleanup
 brew cleanup
