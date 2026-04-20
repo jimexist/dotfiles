@@ -53,7 +53,6 @@ brew install \
   postman \
   postico \
   rectangle \
-  dropbox \
   docker \
   the-unarchiver \
   ngrok
