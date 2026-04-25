@@ -17,7 +17,7 @@ brew install \
   tokei \
   fd \
   python3 \
-  node
+  uv
 
 # others
 brew install \
@@ -35,7 +35,8 @@ brew install \
   xz \
   z \
   awscli \
-  httpie
+  httpie \
+  hf
 
 # casks
 brew install \
@@ -46,7 +47,6 @@ brew install \
   postman \
   postico \
   rectangle \
-  docker \
   the-unarchiver \
   ngrok \
   ghostty \
