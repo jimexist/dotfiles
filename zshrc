@@ -105,8 +105,6 @@ export SSH_KEY_PATH=" ~/.ssh/id_ed25519"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-alias b="bat"
-
 export GOPATH="$HOME/go"
 export GOROOT="$(brew --prefix go)/libexec"
 
